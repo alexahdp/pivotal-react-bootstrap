@@ -1,0 +1,35 @@
+module.exports = {
+  "parser": "babel-eslint",
+
+  "extends": [
+    "google",
+    'plugin:react/recommended',
+    "plugin:flowtype/recommended"
+  ],
+
+  env: {
+    browser: true,
+    node: true,
+    "jest": true,
+  },
+
+  globals: {
+    'expect': true,
+    'chai': true,
+  },
+
+  plugins: [
+    "redux-saga",
+    'react',
+    'flowtype',
+    "jsx-a11y"
+  ],
+
+  parserOptions: {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+};
